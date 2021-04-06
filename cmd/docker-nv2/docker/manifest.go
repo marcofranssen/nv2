@@ -10,10 +10,11 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/manifest/schema2"
-	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
-	"github.com/notaryproject/nv2/pkg/docker"
 	"github.com/opencontainers/go-digest"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
+
+	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
+	"github.com/notaryproject/nv2/pkg/docker"
 )
 
 // GenerateManifest generate manifest from docker save

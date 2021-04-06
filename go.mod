@@ -14,6 +14,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.1
 	github.com/urfave/cli/v2 v2.3.0
 	golang.org/x/sys v0.0.0-20210330210617-4fbd30eecc44 // indirect
+	golang.org/x/tools v0.1.0
 	gotest.tools/v3 v3.0.3 // indirect
 )
 

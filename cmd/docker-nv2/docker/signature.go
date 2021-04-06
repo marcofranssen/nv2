@@ -5,8 +5,10 @@ import (
 	"net"
 
 	"github.com/docker/distribution/reference"
+
 	"github.com/notaryproject/notary/v2"
 	"github.com/notaryproject/notary/v2/registry"
+
 	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
 )
 

@@ -6,9 +6,10 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/notaryproject/nv2/pkg/registry"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/pkg/registry"
 )
 
 var pushCommand = &cli.Command{

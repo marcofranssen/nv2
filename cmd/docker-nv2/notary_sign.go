@@ -3,12 +3,13 @@ package main
 import (
 	"fmt"
 
+	"github.com/opencontainers/go-digest"
+	"github.com/urfave/cli/v2"
+
 	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
 	"github.com/notaryproject/nv2/cmd/docker-nv2/crypto"
 	"github.com/notaryproject/nv2/cmd/docker-nv2/docker"
 	ios "github.com/notaryproject/nv2/internal/os"
-	"github.com/opencontainers/go-digest"
-	"github.com/urfave/cli/v2"
 )
 
 var notarySignCommand = &cli.Command{

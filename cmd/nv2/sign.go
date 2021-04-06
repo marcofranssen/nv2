@@ -7,8 +7,9 @@ import (
 
 	"github.com/notaryproject/notary/v2/signature"
 	"github.com/notaryproject/notary/v2/signature/x509"
-	"github.com/notaryproject/nv2/internal/os"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/internal/os"
 )
 
 const signerID = "nv2"

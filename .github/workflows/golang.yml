@@ -38,6 +38,12 @@ jobs:
       - name: Get dependencies
         run: make download
 
+      - name: Install tools
+        run: make install-tools
+
+      - name: Lint
+        run: make lint
+
       - name: Build
         run: |
           make build

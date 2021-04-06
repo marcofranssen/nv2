@@ -1,6 +1,7 @@
 GO_BUILD_FLAGS =
 DOCKER_PLUGINS = docker-generate docker-nv2
 COMMANDS       = nv2 $(DOCKER_PLUGINS)
+GOPATH := $(shell go env GOPATH)
 
 define BUILD_BINARY =
 	go build $(GO_BUILD_FLAGS) -o $@ ./$<
@@ -57,3 +58,12 @@ install-docker-%: bin/docker-%
 .PHONY: install-docker-plugins
 install-docker-plugins: $(addprefix install-,$(DOCKER_PLUGINS)) ## installs the docker plugins
 	cp $(addprefix bin/,$(DOCKER_PLUGINS)) ~/.docker/cli-plugins/
+
+.PHONY: lint
+lint: ## use goimports to lint
+	$(GOPATH)/bin/goimports -d -e -local github.com/notaryproject/nv2 $$(go list -f {{.Dir}} ./...)
+
+.PHONY: install-tools
+install-tools: download ## install tools from tools.go
+	@echo Installing tools from tools.go
+	@cat tools/tools.go | grep _ | awk -F'"' '{print $$2}' | xargs -tI % go install %

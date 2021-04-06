@@ -1,9 +1,10 @@
 package registry
 
 import (
-	"github.com/notaryproject/notary/v2/signature"
 	digest "github.com/opencontainers/go-digest"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
+
+	"github.com/notaryproject/notary/v2/signature"
 )
 
 func OCIDescriptorFromNotary(desc signature.Descriptor) oci.Descriptor {

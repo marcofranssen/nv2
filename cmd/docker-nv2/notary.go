@@ -3,8 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
 )
 
 var notaryCommand = &cli.Command{

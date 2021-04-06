@@ -6,9 +6,10 @@ import (
 	"net/url"
 	"path/filepath"
 
+	"github.com/urfave/cli/v2"
+
 	"github.com/notaryproject/nv2/internal/os"
 	"github.com/notaryproject/nv2/pkg/registry"
-	"github.com/urfave/cli/v2"
 )
 
 var pullCommand = &cli.Command{
