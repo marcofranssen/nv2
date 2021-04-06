@@ -7,8 +7,9 @@ import (
 
 	"github.com/notaryproject/notary/v2"
 	notaryregistry "github.com/notaryproject/notary/v2/registry"
-	"github.com/notaryproject/nv2/pkg/registry"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/pkg/registry"
 )
 
 func getSignatureRepositoryFromURI(ctx *cli.Context, uri *url.URL) (notary.SignatureRepository, error) {

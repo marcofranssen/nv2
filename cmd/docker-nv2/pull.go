@@ -7,10 +7,11 @@ import (
 
 	"github.com/docker/distribution/reference"
 	"github.com/notaryproject/notary/v2"
-	"github.com/notaryproject/nv2/cmd/docker-nv2/docker"
 	"github.com/opencontainers/go-digest"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/cmd/docker-nv2/docker"
 )
 
 var pullCommand = &cli.Command{

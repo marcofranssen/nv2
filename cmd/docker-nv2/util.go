@@ -4,10 +4,12 @@ import (
 	"os"
 	"os/exec"
 
+	"github.com/urfave/cli/v2"
+
 	"github.com/notaryproject/notary/v2"
+
 	"github.com/notaryproject/nv2/cmd/docker-nv2/config"
 	"github.com/notaryproject/nv2/cmd/docker-nv2/crypto"
-	"github.com/urfave/cli/v2"
 )
 
 func passThroughIfNotaryDisabled(ctx *cli.Context) error {

@@ -9,9 +9,10 @@ import (
 	"strings"
 
 	"github.com/notaryproject/notary/v2/signature"
-	"github.com/notaryproject/nv2/pkg/registry"
 	"github.com/opencontainers/go-digest"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/pkg/registry"
 )
 
 func getManifestFromContext(ctx *cli.Context) (signature.Manifest, error) {

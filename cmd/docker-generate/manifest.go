@@ -5,8 +5,9 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/notaryproject/nv2/pkg/docker"
 	"github.com/urfave/cli/v2"
+
+	"github.com/notaryproject/nv2/pkg/docker"
 )
 
 var manifestCommand = &cli.Command{

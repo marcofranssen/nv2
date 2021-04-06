@@ -10,8 +10,9 @@ import (
 
 	"github.com/docker/distribution"
 	"github.com/docker/distribution/manifest/schema2"
-	iio "github.com/notaryproject/nv2/internal/io"
 	"github.com/opencontainers/go-digest"
+
+	iio "github.com/notaryproject/nv2/internal/io"
 )
 
 type manifestInTar struct {

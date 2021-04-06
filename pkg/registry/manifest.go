@@ -7,9 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/notaryproject/notary/v2/signature"
 	artifactspec "github.com/opencontainers/artifacts/specs-go/v2"
 	oci "github.com/opencontainers/image-spec/specs-go/v1"
+
+	"github.com/notaryproject/notary/v2/signature"
 )
 
 // GetManifestMetadata returns signature manifest information by URI scheme
