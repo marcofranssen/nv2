@@ -1,0 +1,6 @@
+{
+  "go.formatTool": "goimports",
+  "go.formatFlags": [
+    "-local github.com/notaryproject/nv2"
+  ]
+}
