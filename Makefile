@@ -45,7 +45,7 @@ vendor: ## vendores the go modules
 	GO111MODULE=on go mod vendor
 
 .PHONY: install
-install: install-nv2 install-docker-plugins
+install: install-nv2 install-docker-plugins ## install the nv2 client and docker plugins
 
 .PHONY: install-nv2
 install-nv2: bin/nv2
